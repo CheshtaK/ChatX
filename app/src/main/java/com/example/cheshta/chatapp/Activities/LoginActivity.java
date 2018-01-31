@@ -60,7 +60,6 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(loginIntent);
                 }
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
