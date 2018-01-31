@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.cheshta.chatapp.MainActivity">
+    tools:context="com.example.cheshta.chatapp.Activities.MainActivity">
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
@@ -22,14 +22,19 @@
         android:id="@+id/LinearLayout">
 
         <EditText
-            android:layout_width="300dp"
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
             android:layout_height="wrap_content"
             android:id="@+id/etMessage"/>
 
-        <Button
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Send"
+            android:clickable="true"
+            android:background="@color/colorPrimary"
+            android:src="@android:drawable/ic_menu_send"
             android:onClick="sendButtonClicked"/>
+
     </LinearLayout>
 </RelativeLayout>
